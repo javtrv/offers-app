@@ -1,0 +1,88 @@
+$primary-color: #4eaa74;
+$secondary-color: #4ccf7e;
+
+
+.row{
+  width: 100%;
+  margin: 20px auto;
+} 
+
+.header-navbar{
+  background-color: $primary-color;
+  padding: 0;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    height: 75px;
+  }
+  .navbar-brand{
+    color:#1c1c1c;
+  }
+  .nav-link{
+    color:whitesmoke;
+    height: 100%;
+    &:hover{
+      color:#1c1c1c;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+main{
+  margin-top: 20px;
+  padding: 20px;
+  h2{
+    color: $primary-color;
+  }
+}
+
+svg{
+  width: 20px;
+  height: 20px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+ul{
+  text-align: left;
+}
+
+.btn-primary{
+  background-color: $primary-color;
+  border: none;
+  &:hover{
+    background-color: $secondary-color;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.form-check-input:checked {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.spinner-border.text-primary{
+  color: $primary-color!important;
+}
+
+.table-responsive{
+  max-height: 45vh;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+
+.form-select{
+  width: 250px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.quantity-field{
+  display: flex;
+  justify-content: left;
+  align-items:flex-start;
+  flex-direction: column;
+}
